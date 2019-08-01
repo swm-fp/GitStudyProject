@@ -35,17 +35,17 @@ function getEntireTree(id){
 }
 
 chrome.bookmarks.onCreated.addListener(function (id, bookmark) {
-    console.log("id: "+id+" id2: "+bookmark.id);
+    console.log("action:create//"+"id: "+id+" bookmarkInfo: "+bookmark);
 });
 
 chrome.bookmarks.onChanged.addListener(function (id, bookmark) {
-    console.log("id: "+id+" id2: "+bookmark.id);
+    console.log("action:change//"+"id: "+id+" bookmarkInfo: "+bookmark);
 });
 
 chrome.bookmarks.onRemoved.addListener(function (id, bookmark) {
-    console.log("id: "+id+" id2: "+bookmark.id);
+    console.log("action:remove//"+"id: "+id+" bookmarkInfo: "+bookmark);
 });
 
 chrome.bookmarks.onMoved.addListener(function (id, bookmark) {
-    console.log("id: "+id+" id2: "+bookmark.id);
+    console.log("action:move//"+"id: "+id+" bookmarkInfo: "+bookmark);
 });
