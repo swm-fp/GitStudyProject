@@ -39,7 +39,7 @@ chrome.bookmarks.onCreated.addListener(function (id, bookmark) {
 });
 
 chrome.bookmarks.onChanged.addListener(function (id, bookmark) {
-    console.log("action:change//"+"id: "+id+" bookmarkInfo: "+bookmark);
+    console.log("action:change//"+"id: "+id+" bookmaddrkInfo: "+bookmark);
 });
 
 chrome.bookmarks.onRemoved.addListener(function (id, bookmark) {
