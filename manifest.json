@@ -7,10 +7,11 @@
     "tabs",
     "storage",
     "webRequest",
-    "*://fpsample.s3.ap-northeast-2.amazonaws.com/"],
+    "*://fpsample.s3.ap-northeast-2.amazonaws.com/",
+    "bookmarks"],
 
   "background": {
-    "scripts": ["background.js","login.js"],
+    "scripts": ["background.js","login.js","background_getBookmark.js"],
     "persistent": true
   },
   "browser_action": {
